@@ -13,7 +13,17 @@ var formatText = function(userText) {
   return userText;
 }
 
-var mathText = function(userText) {
-  var rowLength = Math.floor(Math.sqrt(userText.length));
+var rowLength = function(userText) {
+  rowLength = Math.ceil(Math.sqrt(userText.length));
   return rowLength;
+}
+
+var createSquare = function(userText) {
+  // userText.slice(0, rowLength)
+  // userText.slice(rowLength)
+  createSquare = [];
+  for (var index = 1; index < rowLength; index +=1) {
+    createSquare.push(userText.slice(rowLength * (index - 1), rowLength * index));
+ }
+ return createSquare;
 }
