@@ -8,3 +8,9 @@ describe('formatText', function() {
     expect(formatText("HELLO")).to.equal("hello");
   });
 });
+
+describe('mathText', function() {
+  it("will count the number of characters ", function() {
+    expect(mathText("hihowareyou")).to.equal(3);
+  });
+});

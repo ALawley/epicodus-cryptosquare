@@ -12,3 +12,8 @@ var formatText = function(userText) {
   userText = userText.toLowerCase().replace(/ /g,'');
   return userText;
 }
+
+var mathText = function(userText) {
+  var rowLength = Math.floor(Math.sqrt(userText.length));
+  return rowLength;
+}
