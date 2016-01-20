@@ -15,10 +15,14 @@ describe('rowLength', function() {
   });
 });
 
-//create array of strings where each string is equal to rowLength
-
 describe('createSquare', function() {
   it("will create an array where each string length is equal to or less than rowLength", function() {
     expect(createSquare("hihowareyou")).to.eql(["hiho", "ware", "you"]);
+  });
+});
+
+describe('textScramble', function() {
+  it("will create a large string using the first letter of each string in createSquare array, then the second, and looping through to the end", function() {
+    expect(textScramble(["hiho", "ware", "you"])).to.eql("hwyiaohruoe")
   });
 });

@@ -19,11 +19,24 @@ var rowLength = function(userText) {
 }
 
 var createSquare = function(userText) {
-  // userText.slice(0, rowLength)
-  // userText.slice(rowLength)
   createSquare = [];
   for (var index = 1; index < rowLength; index +=1) {
     createSquare.push(userText.slice(rowLength * (index - 1), rowLength * index));
  }
  return createSquare;
+}
+
+var textScramble = function(createSquare) {
+  textScramble;
+  for (var index = 0; index <= rowLength; index +=1) {
+    textScramble += slice(createSquare.forEach (index));
+    // createSquare.forEach(alert("hi"));
+    // textScramble.concat(createSquare.charAt(index));
+  }
+  return textScramble;
+  //create an array with five letter strings
+  //loop it until !!! <= array.length charAt 0,
+  //loop that concats first letters until has 5
+  //loop that pushes those into array?
+  // charTake = 0
 }
