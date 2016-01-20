@@ -29,14 +29,8 @@ var createSquare = function(userText) {
 var textScramble = function(createSquare) {
   textScramble;
   for (var index = 0; index <= rowLength; index +=1) {
-    textScramble += slice(createSquare.forEach (index));
-    // createSquare.forEach(alert("hi"));
-    // textScramble.concat(createSquare.charAt(index));
+    //put array in array
+    // createSquare.forEach[0] grab that letter
   }
   return textScramble;
-  //create an array with five letter strings
-  //loop it until !!! <= array.length charAt 0,
-  //loop that concats first letters until has 5
-  //loop that pushes those into array?
-  // charTake = 0
 }
